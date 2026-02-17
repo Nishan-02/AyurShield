@@ -1,0 +1,9 @@
+
+{
+  "name": "Ayur-Shield",
+  "description": "A comprehensive Ayurvedic health-tech platform for checking drug-herb interactions, exploring seasonal lifestyle rules (Ritucharya), and discovering the medicinal properties of traditional herbs.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ]
+}

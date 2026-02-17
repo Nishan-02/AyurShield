@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sage-green: #739072;
+  --dark-sage: #4F6F52;
+  --beige: #FDFCF7;
+  --soft-beige: #F1EFE3;
+  --warning-red: #E27373;
+  --glass-white: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  background-color: var(--beige);
+  font-family: 'Inter', sans-serif;
+  color: #2D3E33;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: var(--glass-white);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(115, 144, 114, 0.08);
+}
+
+/* Mobile Layout Optimizations */
+@media (max-width: 768px) {
+  .mobile-top-nav-container {
+    background: white;
+    border-bottom: 1px solid rgba(115, 144, 114, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  }
+
+  .mobile-nav-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .mobile-nav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-content {
+    padding-top: 10px;
+  }
+
+  .sticky-top-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  /* Vertical Stacking Controls */
+  .stack-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .full-width-card {
+    width: 100% !important;
+  }
+
+  /* Interaction Feedback */
+  .tap-active {
+    transition: transform 0.2s ease;
+  }
+
+  .tap-active:active {
+    transform: scale(0.97);
+  }
+
+  /* Button Optimizations */
+  .mobile-btn {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  /* Input Optimizations */
+  input,
+  select {
+    min-height: 52px !important;
+    font-size: 16px !important;
+  }
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out forwards;
+}
