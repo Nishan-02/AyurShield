@@ -16,22 +16,22 @@ export const HERBS: Herb[] = [
   {
     id: "h1",
     name: "Ginger",
-    sanskrit_name: "Adrak",
+    sanskrit_name: "Adraka",
     property: "Heating",
     conflicts_with_tags: ["anticoagulant", "blood_thinner"],
     warning_msg: "CRITICAL: Ginger thins the blood. Combining with anticoagulants causes internal bleeding risk.",
     season_conflict: ["Summer", "Autumn"],
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=400"
+    image: "https://wallpapers.com/images/hd/sliced-and-powdered-ginger-root-spice-7ime6ljxsz0wxi9v.jpg"
   },
   {
     id: "h2",
     name: "Turmeric",
-    sanskrit_name: "Haldi",
+    sanskrit_name: "Haridra",
     property: "Heating",
     conflicts_with_tags: ["anticoagulant", "hypoglycemic"],
     warning_msg: "CAUTION: High doses of Turmeric can lower blood sugar and thin blood excessively.",
     season_conflict: ["Summer"],
-    image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&q=80&w=400"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Curcuma_longa_roots.jpg/640px-Curcuma_longa_roots.jpg"
   },
   {
     id: "h3",
@@ -39,9 +39,9 @@ export const HERBS: Herb[] = [
     sanskrit_name: "Withania Somnifera",
     property: "Heating",
     conflicts_with_tags: ["sedative", "thyroid_med", "hypoglycemic"],
-    warning_msg: "DANGER: Ashwagandha increases sedation and thyroid hormone levels. Do not mix with SSRIs or Thyroid meds.",
+    warning_msg: "DANGER: Increases sedation and thyroid hormone levels. Do not mix with SSRIs or Thyroid meds.",
     season_conflict: ["Summer"],
-    image: "https://images.unsplash.com/photo-1628151515220-410e54448551?auto=format&fit=crop&q=80&w=400"
+    image: "https://img.freepik.com/premium-photo/ashwagandha-known-as-withania-somnifera-ashwagandha_1047188-6743.jpg?w=2000"
   },
   {
     id: "h4",
@@ -51,7 +51,7 @@ export const HERBS: Herb[] = [
     conflicts_with_tags: ["anticoagulant", "nsaid"],
     warning_msg: "CRITICAL: Ginkgo is a potent blood thinner. Major bleeding risk with Aspirin/Warfarin.",
     season_conflict: ["Winter"],
-    image: "https://images.unsplash.com/photo-1589139265147-380104692793?auto=format&fit=crop&q=80&w=400"
+    image: "https://th.bing.com/th/id/OIP.i_UYTuy1GKke0nXNYPEoGAHaEr?w=268&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"
   },
   {
     id: "h5",
@@ -59,9 +59,9 @@ export const HERBS: Herb[] = [
     sanskrit_name: "Karavellaka",
     property: "Cooling",
     conflicts_with_tags: ["hypoglycemic"],
-    warning_msg: "DANGER: Karela mimics insulin. Combining with Diabetes meds can cause severe hypoglycemia (low sugar coma).",
+    warning_msg: "DANGER: Karela mimics insulin. Combining with Diabetes meds can cause severe hypoglycemia.",
     season_conflict: ["Winter"],
-    image: "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&q=80&w=400"
+    image: "https://thumbs.dreamstime.com/z/indian-green-karela-store-stall-indian-green-karela-close-up-111614510.jpg"
   },
   {
     id: "h6",
@@ -71,17 +71,18 @@ export const HERBS: Herb[] = [
     conflicts_with_tags: ["hypotensive", "diuretic"],
     warning_msg: "CAUTION: Licorice can raise blood pressure and deplete potassium. Dangerous with heart meds.",
     season_conflict: ["Winter"],
-    image: "https://images.unsplash.com/photo-1611119747967-df30739c3664?auto=format&fit=crop&q=80&w=400"
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/6/DS/NC/BP/126009257/mulethi-licorice-root-1000x1000.jpg"
   },
   {
     id: "h7",
     name: "Tulsi (Holy Basil)",
+    sanskrit_name: "Tulasi",
     property: "Neutral",
     conflicts_with_tags: [],
     warning_msg: "None. Tulsi is generally safe.",
     season_conflict: [],
-    image: "https://images.unsplash.com/photo-1631553127988-34865103a88a?auto=format&fit=crop&q=80&w=400"
-  }
+    image: "https://tse4.mm.bing.net/th/id/OIP.9UEqqH4Bat1m9DQIppoH0AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
 ];
 
 export const SEASONAL_DATA: SeasonalData = {
